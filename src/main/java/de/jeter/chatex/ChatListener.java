@@ -40,7 +40,7 @@ public class ChatListener implements Listener {
         ? new SmartAdManager() 
         : new SimpleAdManager();
 
-    @EventHandler(priority = EventPriority.LOWEST)
+    @EventHandler(priority = EventPriority.LOW)
     public void onChat(AsyncPlayerChatEvent event) {
         if (event.isCancelled()) {
             return;
